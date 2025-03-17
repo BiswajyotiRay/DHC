@@ -62,6 +62,8 @@ if __name__ == '__main__':
                         label = F.interpolate(label, size=pred_shape, mode='nearest')
 
                     label = label.squeeze().numpy()
+                    print(f"After resizing: pred shape={pred.shape}, label shape={label.shape}")
+                    print(f"Unique pred values: {np.unique(pred)}, Unique label values: {np.unique(label)}")
 
                 # Compute Metrics
                 for i in test_cls:
