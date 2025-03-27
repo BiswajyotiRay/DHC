@@ -6,3 +6,4 @@ monai
 medpy
 tensorboard
 timm
+einops
